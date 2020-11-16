@@ -5,6 +5,7 @@
   "author": "Naoya Nishida <n-nishida@zyyx.jp>",
   "description": "my team bot",
   "dependencies": {
+    "cron": "^1.8.2",
     "hubot": "^3.3.2",
     "hubot-diagnostics": "^1.0.0",
     "hubot-google-images": "^0.2.7",
