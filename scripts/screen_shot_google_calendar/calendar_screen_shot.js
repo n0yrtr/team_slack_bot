@@ -39,7 +39,8 @@ exports.screenshot = function() {
     await page.click(selectorSubmit);
     
     await page.waitForSelector('body > div.tEhMVd > div.pSp5K > div.KKOvEb > div.SGWAac > div.QQYuzf > div > div.hEtGGf.HDIIVe.sBn5T > div.qXIcZc.ZtL5hd > div.TBA7qc > div.J09ahd.TanRXd.l94Mhe > div.YxiWic.UMArVc > div > span > div > div.d1dlne.WvJxMd > div.rFrNMe.Ax4B8.ULpymb.zKHdkd.Tyc9J > div.aCsJod.oJeWuf > div > div.Xb9hP > input');
-    await page.waitFor(10000);
+    await page.waitForTimeout(10000);
+    // チームメンバーのメールアドレスを入力
     await selectCalendar(page, "aaaaa@gmail.com");
     await selectCalendar(page, "aaaaa@gmail.com");
     await selectCalendar(page, "aaaaa@gmail.com"); 
