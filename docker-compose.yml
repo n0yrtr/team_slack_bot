@@ -1,0 +1,11 @@
+version: '2'
+services:
+  teambot:
+    build: .
+    tty: true
+    ports:
+      - "13970:3000"
+    volumes:
+      - ./:/home/node/
+    network_mode: "bridge"
+    command: /bin/bash -c "cd /home/node && npm install && npm install -g coffee-script && npm run forever -- --minUptime 3000 --spinSleepTime 3000 -c coffee node_modules/.bin/hubot -a slack"
